@@ -1,0 +1,497 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Satisfy&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav ul li a {
+  text-align: center;
+  font: normal normal normal 24px Heebo;
+  letter-spacing: 0px;
+  text-decoration: none;
+  color: #2c2c2c;
+  opacity: 1;
+  transition: 0.4s;
+  width: 7rem;
+  display: inline-block;
+  height: 2rem;
+  padding: 0.5rem;
+}
+
+nav ul li a:hover {
+  font-size: 25px;
+  color: #1ae0ec;
+  cursor: pointer;
+}
+
+.hamburger {
+  color: #1ae0ec;
+  font-weight: bold;
+  font-size: 3em;
+  cursor: pointer;
+  display: none;
+  opacity: 1;
+}
+
+#chk {
+  display: none;
+}
+.section-space {
+  width: 100%;
+  height: 17vh;
+}
+.section-space-1 {
+  height: 3vh;
+}
+.container {
+  width: 100vw;
+  top: 0;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  z-index: 4;
+  background-color: #fff;
+  opacity: 0.9;
+  box-shadow: 0px 5px 5px #777;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: none;
+  margin: none;
+}
+
+.imgofme {
+  width: 5vw;
+  border-radius: 50%;
+}
+
+.myself {
+  padding-left: 2rem;
+  display: flex;
+}
+
+.tamar-container {
+  margin: 0 auto;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.Tamar {
+  font-family: Satisfy;
+  font-size: 1.5rem;
+}
+
+.projects {
+  background-image: url(images/backgoundindex.jpeg);
+  background-size: cover;
+  position: relative;
+  right: 0;
+  width: 100%;
+  height: 60vh;
+  z-index: 1;
+}
+
+.projects-colors {
+  width: 100%;
+  height: 100%;
+  background: #13e8f163 0% 0% no-repeat padding-box;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.titleh1 > span {
+  font-size: 4rem;
+  font-family: Heebo;
+}
+
+.titleh1 {
+  font-family: Heebo;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bolder;
+  margin: 7%;
+  padding-top: 5%;
+  text-align: center;
+  opacity: 1;
+}
+
+.iconswrap {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.iconswrap > img {
+  width: 4rem;
+  transition-duration: 0.3s;
+}
+
+.iconswrap img:hover {
+  transform: scale(1.3);
+}
+
+hr {
+  background-color: #aaa;
+}
+
+.aboutwrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
+.aboutwrap > div {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.photo-about > img {
+  width: 8rem;
+  border-radius: 50%;
+}
+
+.h1-about {
+  font-size: 1.5rem;
+  font-family: Heebo;
+}
+
+.about-me > p {
+  font-family: Heebo;
+  width: 60%;
+}
+
+.button-about > a > button {
+  width: 12rem;
+  border-radius: 30px 30px 30px 30px;
+  background-color: #1ae0ec;
+  padding: 1rem 1rem;
+  border: none;
+  font-family: Heebo;
+  font-size: 1em;
+}
+
+.gallery {
+  background-color: #f6f6f6;
+  padding: 5rem 3rem;
+}
+
+.gallery > h2 {
+  text-align: center;
+  font-family: Heebo;
+}
+
+.gallery-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  height: 70vh;
+  background-color: #fff;
+  margin: 1.5rem;
+  width: 25vw;
+  border-radius: 25px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.flexbutton {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.flexbutton > a > button {
+  border: 1px solid #000;
+  outline: none;
+  border-radius: 20px 20px 20px 20px;
+  width: 12vw;
+  height: 7vh;
+  font-family: Heebo;
+  background-color: #1ae0ec;
+  font-size: 1.1rem;
+}
+
+.card {
+  transition: all 1500ms;
+}
+
+.card > h2 {
+  font-family: Satisfy;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.card > p {
+  font-family: Heebo;
+  text-align: center;
+}
+
+.card > img {
+  width: 100%;
+}
+
+.card:hover {
+  /*          x   y   blur spread  */
+  box-shadow: 1px 3px 2px 3px #777;
+}
+
+.card > .card1_image,
+.card > .card2_image,
+.card > .card3_image,
+.card > .card4_image,
+.card > .card5_image,
+.card > .card6_image {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top center;
+  width: 100%;
+  height: 30vh;
+  transition-property: background-size;
+  transition-duration: 1500ms;
+  border-radius: 25px;
+}
+
+.card1_image:hover,
+.card2_image:hover,
+.card3_image:hover,
+.card4_image:hover,
+.card5_image:hover,
+.card6_image:hover {
+  background-size: 150%;
+  opacity: 0.8;
+}
+
+.card1_image {
+  background-image: url("images/freeshotscreen.jpeg");
+}
+
+.card2_image {
+  background-image: url("images/movingyouforward.jpeg");
+}
+
+.card3_image {
+  background-image: url("images/hereandnow.jpg.jpeg");
+}
+
+.card4_image {
+  background-image: url("images/letusmovingyou.jpeg");
+}
+
+.card5_image {
+  background-image: url("images/coffeeform.png");
+}
+
+.card > .card6_image {
+  background-image: url("images/travelgrid.jpeg");
+  background-size: 100% 85%;
+  transition: all 1500ms;
+}
+
+.card > .card6_image:hover {
+  background-size: 150% 135%;
+  opacity: 0.8;
+}
+
+.contact {
+  display: flex;
+  background-color: #3a3a3a;
+  position: relative;
+}
+
+.contact-image {
+  width: 100%;
+  height: 100vh;
+  background-image: url("images/Rectangle\ 41.png");
+  background-size: 50%;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  left: 2rem;
+}
+
+.wrap {
+  padding-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  padding-top: 4.5rem;
+  padding-bottom: 4rem;
+  font-family: Heebo;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0.7rem;
+  padding-top: 0.7rem;
+  opacity: initial;
+}
+
+.field > input {
+  height: 2rem;
+  font-size: larger;
+}
+
+.field > textarea {
+  font-size: larger;
+  height: 7rem;
+}
+
+.field > input[type="text"],
+.field > input[type="email"],
+.field > textarea {
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #1ae0ec;
+  width: 40vw;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.field > input[type="submit"] {
+  width: 10vw;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  background-color: #1ae0ec;
+  font-weight: bold;
+
+  font-family: Heebo;
+  height: 3rem;
+}
+
+.field > input[type="submit"]:hover {
+  color: #fff;
+}
+
+.bluefooter {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: #1ae0ec;
+  padding: 1.5rem;
+}
+
+.bluefooter > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bluefooter > div > * {
+  padding: 0.5rem;
+}
+
+.bluefooter > div > p {
+  font-family: Heebo;
+  font-size: 1rem;
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000;
+  height: 2rem;
+  width: 100%;
+  font-family: Heebo;
+  color: #fff;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (max-width: 576px) {
+  .hamburger {
+    display: initial;
+  }
+
+  .container {
+    padding-right: 0px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  nav > ul > li > a {
+    text-align: right;
+  }
+
+  #chk:checked ~ ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .gallery {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+
+  .card {
+    width: 95vw;
+  }
+
+  .flexbutton > a > button {
+    width: 30vw;
+  }
+
+  .wrap {
+    background-size: 50%;
+  }
+
+  .contact > .wrap {
+    padding-right: 1rem;
+  }
+
+  .contact > .wrap > form > .field > * {
+    width: 90vw;
+  }
+
+  .contact > .wrap > form > .field > input[type="submit"] {
+    width: 35vw;
+  }
+
+  .contact-image {
+    background-size: 40%;
+  }
+
+  .bluefooter {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .bluefooter > div {
+    width: 40%;
+  }
+
+  .iconswrap {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}

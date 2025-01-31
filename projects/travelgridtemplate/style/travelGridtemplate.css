@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.projects {
+  width: 100%;
+  height: 35vh;
+  z-index: 1;
+  position: relative;
+}
+
+.projects-background-image {
+  width: 100%;
+  height: 35vh;
+  background-image: url(../images/whitebg.jpg);
+  background-size: cover;
+  background-position: center center;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.project-background-color {
+  position: absolute;
+  width: 100%;
+  height: 35vh;
+  top: 0;
+  left: 0;
+  background-color: #1ae0ec;
+  z-index: 3;
+  opacity: 0.3;
+}
+.titleh1-container {
+  position: relative;
+  z-index: 2;
+  height: 35vh;
+}
+
+.titleh1 > span {
+  font-size: 4rem;
+  font-family: Heebo;
+}
+
+.titleh1 {
+  font-family: Heebo;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bolder;
+  padding-top: 2%;
+  text-align: center;
+  opacity: 1;
+}
+
+.title {
+  font-family: Satisfy;
+  font-size: 3rem;
+  color: #fff;
+}
+.download-container {
+  display: flex;
+  justify-content: center;
+}
+.download-container > a > button {
+  width: 14rem;
+  border-radius: 30px 30px 30px 30px;
+  background-color: #1ae0ec;
+  padding: 1rem;
+  border: none;
+  font-family: Heebo;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.iconswrap {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.iconswrap > img {
+  width: 4rem;
+  transition-duration: 0.3s;
+}
+
+.iconswrap img:hover {
+  transform: scale(1.3);
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: #e5eeff;
+  display: flex;
+  justify-content: center;
+}
+
+.wrap {
+  width: 70vw;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas:
+    "bigblue1 bigblue1 square1 square2"
+    "bigblue1 bigblue1 square3 square4"
+    "square5 square6 square7 square8"
+    "square9 square10 form form"
+    "square11 square12 form form"
+    "square13 square14 form form";
+  grid-gap: 0.5rem;
+}
+
+.bigblue {
+  background-color: #020253;
+  text-align: center;
+  grid-area: bigblue1;
+  display: flex;
+  align-items: center;
+}
+
+.bigblue > div > h1 {
+  font-size: 2rem;
+  color: #0ee1da;
+  font-family: Heebo;
+}
+
+.bigblue > div > p {
+  font-size: 0.7rem;
+  font-family: Heebo;
+  color: #fff;
+}
+
+.item {
+  width: 18vw;
+}
+
+.form {
+  grid-area: form;
+  background-color: #8e097c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Heebo;
+  justify-content: space-around;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.form-control > label {
+  color: #0ee1da;
+  font-size: x-small;
+  text-align: right;
+}
+
+.form-control > input {
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #0ee1da;
+  height: 2rem;
+}
+
+.form-control > textarea {
+  height: 5rem;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #0ee1da;
+}
+
+.form-control > button {
+  color: #011560;
+  background-color: #0ee1da;
+  font-family: Heebo;
+  height: 2rem;
+  border: none;
+  font-weight: bold;
+}
+
+.form > h1,
+.form > p {
+  color: #fff;
+  font-family: Heebo;
+  text-align: center;
+}
+
+.form > h1 {
+  font-size: 2rem;
+}
+
+.form > p {
+  font-size: 0.7rem;
+}
+
+.pic1 {
+  grid-area: square1;
+}
+
+.pic2 {
+  grid-area: square2;
+}
+
+.pic3 {
+  grid-area: square3;
+}
+
+.pic4 {
+  grid-area: square4;
+}
+
+.pic5 {
+  grid-area: square5;
+}
+
+.pic6 {
+  grid-area: square6;
+}
+
+.pic7 {
+  grid-area: square7;
+}
+
+.pic8 {
+  grid-area: square8;
+}
+
+.pic9 {
+  grid-area: square9;
+}
+
+.pic10 {
+  grid-area: square10;
+}
+
+.pic11 {
+  grid-area: square11;
+}
+
+.pic12 {
+  grid-area: square12;
+}
+
+.pic13 {
+  grid-area: square13;
+}
+
+.pic14 {
+  grid-area: square14;
+}
+
+@media (max-width: 576px) {
+  .titleh1 > span {
+    font-size: 2rem;
+  }
+  .download-container {
+    padding-top: 5vh;
+  }
+}
+@media (max-width: 768px) {
+  .wrap {
+    width: 100vw;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-areas:
+      "bigblue1 bigblue1"
+      "bigblue1 bigblue1"
+      "square1 square2"
+      "square3 square4"
+      "square5 square6"
+      "square7 square8"
+      "form form"
+      "form form"
+      "form form"
+      "square9 square10"
+      "square11 square12"
+      "square13 square14";
+    grid-gap: 0.5rem;
+  }
+
+  .item {
+    width: 50vw;
+  }
+}

@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Satisfy&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.projects {
+  width: 100%;
+  height: 35vh;
+  z-index: 1;
+  position: relative;
+}
+
+.projects-background-image {
+  width: 100%;
+  height: 35vh;
+  background-image: url(../images/whitebg.jpg);
+  background-size: cover;
+  background-position: center center;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.project-background-color {
+  position: absolute;
+  width: 100%;
+  height: 35vh;
+  top: 0;
+  left: 0;
+  background-color: #1ae0ec;
+  z-index: 3;
+  opacity: 0.3;
+}
+.titleh1-container {
+  position: relative;
+  z-index: 2;
+  height: 35vh;
+}
+
+.titleh1 > span {
+  font-size: 4rem;
+  font-family: Heebo;
+}
+
+.titleh1 {
+  font-family: Heebo;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bolder;
+  padding-top: 2%;
+  text-align: center;
+  opacity: 1;
+}
+
+.title {
+  font-family: Satisfy;
+  font-size: 3rem;
+  color: #fff;
+}
+.download-container {
+  display: flex;
+  justify-content: center;
+}
+.download-container > a > button {
+  width: 14rem;
+  border-radius: 30px 30px 30px 30px;
+  background-color: #1ae0ec;
+  padding: 1rem;
+  border: none;
+  font-family: Heebo;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.iconswrap {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.iconswrap > img {
+  width: 4rem;
+  transition-duration: 0.3s;
+}
+
+.iconswrap img:hover {
+  transform: scale(1.3);
+}
+
+.wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  background-image: url(../images/path15blue.png);
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  height: 60vh;
+  clip-path: polygon(0 0, 100% 0, 100% 65%, 50% 97%, 0 60%);
+}
+
+.two-p {
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 10rem;
+  position: absolute;
+}
+
+.two-p > h1 {
+  font-size: 2.5rem;
+  color: #d3e10e;
+  font-family: Assistant;
+  font-weight: bold;
+}
+
+.two-p > p {
+  font-family: Assistant;
+  color: #f9f9f9;
+  font-size: smaller;
+}
+
+.input {
+  display: flex;
+  gap: 1rem;
+  margin-top: 3rem;
+  margin-right: 20rem;
+}
+
+.field > label {
+  font-weight: bold;
+  font-family: Assistant;
+  color: #011560;
+  font-size: x-small;
+}
+
+.field > input[type="text"],
+.field > input[type="email"] {
+  height: 1.5rem;
+  width: 20vw;
+  outline: none;
+  border: none;
+  background-color: #e5eeff;
+  border-bottom: 2px solid #d3e10e;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.field > button {
+  font-family: Assistant;
+  font-weight: bold;
+  width: 7vw;
+  height: 4vh;
+  outline: none;
+  border: none;
+  color: #011560;
+  background-color: #d3e10e;
+}
+
+.bottom-space {
+  width: 100%;
+  height: 35vh;
+}
+
+@media (max-width: 576px) {
+  .titleh1 > span {
+    font-size: 2rem;
+  }
+  .download-container {
+    padding-top: 5vh;
+  }
+}
+@media (max-width: 768px) {
+  .wrap {
+    clip-path: polygon(0 0, 100% 0, 100% 57%, 50% 100%, 0 57%);
+    opacity: 1;
+    background-size: 100vw 80vh;
+  }
+  .two-p {
+    margin-top: 2%;
+    margin-bottom: 10rem;
+  }
+
+  .input {
+    flex-direction: column;
+    margin: inherit;
+    align-items: center;
+  }
+
+  .field > button,
+  .field > input[type="text"],
+  .field > input[type="email"] {
+    width: 60vw;
+  }
+}

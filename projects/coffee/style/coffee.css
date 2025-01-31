@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap");
+
+:root {
+  --primary-color: #020253;
+  --bg-color: #e5eeff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Heebo", "Arial", sans-serif;
+}
+
+.projects {
+  width: 100%;
+  height: 35vh;
+  z-index: 1;
+  position: relative;
+}
+
+.projects-background-image {
+  width: 100%;
+  height: 35vh;
+  background-image: url(../images/whitebg.jpg);
+  background-size: cover;
+  background-position: center center;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.project-background-color {
+  position: absolute;
+  width: 100%;
+  height: 35vh;
+  top: 0;
+  left: 0;
+  background-color: #1ae0ec;
+  z-index: 3;
+  opacity: 0.3;
+}
+.titleh1-container {
+  position: relative;
+  z-index: 2;
+  height: 35vh;
+}
+
+.titleh1 > span {
+  font-size: 4rem;
+  font-family: Heebo;
+  color: #000000;
+}
+
+.titleh1 {
+  font-family: Heebo;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bolder;
+  padding-top: 2%;
+  text-align: center;
+  opacity: 1;
+}
+
+.title {
+  font-family: Satisfy;
+  font-size: 3rem;
+  color: #fff;
+}
+.download-container {
+  display: flex;
+  justify-content: center;
+}
+.download-container > a > button {
+  width: 14rem;
+  border-radius: 30px 30px 30px 30px;
+  background-color: #1ae0ec;
+  padding: 1rem;
+  border: none;
+  font-family: Heebo;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.iconswrap {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.iconswrap > img {
+  width: 4rem;
+  transition-duration: 0.3s;
+}
+
+.iconswrap img:hover {
+  transform: scale(1.3);
+}
+
+h1,
+p,
+label {
+  color: var(--primary-color);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.right-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.container-img {
+  width: 60vw;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container-form {
+  width: 25vw;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.form-control > label {
+  font-size: x-small;
+  font-weight: bold;
+}
+
+.form-control > input[type="submit"] {
+  color: #fff;
+  background-color: #020253;
+  width: 5vw;
+  font-family: Heebo;
+}
+
+.form-control > input[type="text"],
+.form-control > input[type="email"] {
+  text-align: right;
+  background-color: #e5eeff;
+  width: 15vw;
+  height: 1.5rem;
+  border: none;
+  border-bottom: 2px solid #020253;
+}
+
+@media (max-width: 576px) {
+  .titleh1 > span {
+    font-size: 2rem;
+  }
+  .download-container {
+    padding-top: 5vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+
+  .container-img {
+    width: initial;
+  }
+
+  .container-img > img {
+    height: 40vh;
+  }
+
+  .container-form {
+    width: initial;
+  }
+
+  .form-control {
+    align-items: center;
+  }
+
+  .form-control > input[type="text"],
+  .form-control > input[type="submit"],
+  .form-control > input[type="email"],
+  .container-form-title > * {
+    width: 80vw;
+  }
+
+  .container-form-title {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+}
