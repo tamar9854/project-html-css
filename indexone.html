@@ -192,15 +192,15 @@
         <form action="">
           <div class="field">
             <label for="name">שם</label>
-            <input type="text" id="name" placeholder="שם" />
+            <input type="text" id="name" placeholder="שם" required />
           </div>
           <div class="field">
             <label for="email">אימייל</label>
-            <input type="text" id="email" placeholder="אימייל" />
+            <input type="email" id="email" placeholder="אימייל" required />
           </div>
           <div class="field">
             <label for="phone">טלפון</label>
-            <input type="text" id="phone" placeholder="טלפון" />
+            <input type="text" id="phone" placeholder="טלפון" required />
           </div>
           <div class="field">
             <label for="message">הודעה</label>
@@ -209,6 +209,7 @@
               cols="60"
               rows="4"
               placeholder="הודעה"
+              required
             ></textarea>
           </div>
           <div class="field"><input type="submit" value="שליחה" /></div>

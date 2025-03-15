@@ -198,13 +198,15 @@ hr {
 .gallery-wrap {
   display: flex;
   flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
 }
 
 .card {
   height: 77vh;
   background-color: #fff;
-  margin: 1.5rem;
-  width: 25vw;
+  margin: 0.5rem;
+  width: 30%;
   border-radius: 25px;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -247,7 +249,6 @@ hr {
 }
 
 .card:hover {
-  /*          x   y   blur spread  */
   box-shadow: 1px 3px 2px 3px #777;
 }
 
@@ -420,6 +421,11 @@ hr {
   padding-right: 1rem;
 }
 
+@media (max-width: 768px) {
+    .card {
+    width: 35vw;
+  }
+}
 @media (max-width: 576px) {
   .hamburger {
     display: initial;
@@ -493,5 +499,8 @@ hr {
   .iconswrap {
     flex-wrap: wrap;
     justify-content: flex-start;
+  }
+  .copyright {
+    height: 8vh;
   }
 }

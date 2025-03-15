@@ -175,14 +175,6 @@
   grid-area: square14;
 }
 
-/* @media (max-width: 576px) {
-  .titleh1 > span {
-    font-size: 2rem;
-  }
-  .download-container {
-    padding-top: 5vh;
-  }
-} */
 @media (max-width: 576px) {
   .bigblue {
     display: none;
